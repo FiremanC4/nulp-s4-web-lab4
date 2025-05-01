@@ -62,8 +62,8 @@ function ArticleCard({ article, id, isProfile = false, onDelete }) {
             <img
               src={
                 isLiked
-                  ? "/img/icons/like-filled.png"
-                  : "/img/icons/like-empty.png"
+                  ? "img/icons/like-filled.png"
+                  : "img/icons/like-empty.png"
               }
               className="article-like-img"
               alt="Like"
