@@ -34,7 +34,7 @@ const ProtectedRoute = ({ children }) => {
 function App() {
   return (
     <AuthProvider>
-      <Router>
+      <Router basename="/nulp-s4-web-lab4">
         <Routes>
           <Route path="/" element={<IndexPage />} />
           <Route path="/profile" element={<ProfilePage />} />
