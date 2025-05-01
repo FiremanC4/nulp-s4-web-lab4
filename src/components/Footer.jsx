@@ -7,7 +7,7 @@ function Footer() {
       <p className="author-name">Прізвище Ім'я</p>
       <a href="https://github.com/FiremanC4" className="github-link">
         <img
-          src="/img/icons/github-mark/github-mark.png"
+          src="img/icons/github-mark/github-mark.png"
           alt="github"
           className="github-icon"
         />

@@ -41,7 +41,6 @@ const ArticleViewPage = () => {
 
     fetchArticle();
 
-    
     const unsubscribeComments = listenToComments(id, (comments) => {
       setArticle((prev) => ({
         ...prev,
@@ -49,7 +48,6 @@ const ArticleViewPage = () => {
       }));
     });
 
-    
     const unsubscribeLikes = listenToLikes(id, ({ count, isLiked }) => {
       setLikesCount(count);
       setIsLiked(isLiked);
@@ -152,8 +150,8 @@ const ArticleViewPage = () => {
                 <img
                   src={
                     isLiked
-                      ? "/img/icons/like-filled.png"
-                      : "/img/icons/like-empty.png"
+                      ? "img/icons/like-filled.png"
+                      : "img/icons/like-empty.png"
                   }
                   className="article-like-img"
                   alt="Like"
