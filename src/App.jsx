@@ -28,7 +28,7 @@ const ProtectedRoute = ({ children }) => {
     );
   }
 
-  return userLoggedIn ? children : <Navigate to="/nulp-s4-web-lab4/login" />;
+  return userLoggedIn ? children : <Navigate to="/login" />;
 };
 
 function App() {
@@ -36,14 +36,14 @@ function App() {
     <AuthProvider>
       <Router basename="/nulp-s4-web-lab4">
         <Routes>
-          <Route path="/nulp-s4-web-lab4" element={<IndexPage />} />
-          <Route path="/nulp-s4-web-lab4/profile" element={<ProfilePage />} />
-          <Route path="/nulp-s4-web-lab4/article/:id" element={<ArticleViewPage />} />
-          <Route path="/nulp-s4-web-lab4/login" element={<Login />} />
-          <Route path="/nulp-s4-web-lab4/register" element={<Register />} />
-          <Route path="/nulp-s4-web-lab4/help" element={<HelpPage />} />
+          <Route path="/" element={<IndexPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/article/:id" element={<ArticleViewPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/help" element={<HelpPage />} />
           <Route
-            path="/nulp-s4-web-lab4/create-post"
+            path="/create-post"
             element={
               <ProtectedRoute>
                 <CreatePostPage />
@@ -51,7 +51,7 @@ function App() {
             }
           />
           <Route
-            path="/nulp-s4-web-lab4/edit-post/:id"
+            path="/edit-post/:id"
             element={
               <ProtectedRoute>
                 <CreatePostPage isEdit={true} />
