@@ -16,7 +16,7 @@ export default defineConfig({
   ],
   base: '/nulp-s4-web-lab4/',
   build: {
-    outDir: 'nulp-s4-web-lab4',
+    // outDir: 'nulp-s4-web-lab4',
     publicPath: '/',
     emptyOutDir: true, // also necessary
   },
