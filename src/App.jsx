@@ -1,5 +1,5 @@
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
   Navigate,
@@ -12,6 +12,7 @@ import CreatePostPage from "./pages/CreatePostPage";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import HelpPage from "./pages/HelpPage";
+import NotFoundPage from "./pages/NotFoundPage";
 import "./styles/main.css";
 import "./styles/header-footer.css";
 
@@ -58,6 +59,7 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
     </AuthProvider>
