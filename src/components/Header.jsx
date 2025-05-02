@@ -8,7 +8,7 @@ function Header({ title, sort, sortValue, onSortChange }) {
     <header className="header">
       <div className="top-header">
         <Link className="site-title" to="/">
-          <img src="img/icons/icon.png" alt="Logo" className="site-logo" />
+          <img src="/nulp-s4-web-lab4/img/icons/icon.png" alt="Logo" className="site-logo" />
           <p className="site-name">TourBlog</p>
         </Link>
         <nav className="navigation">

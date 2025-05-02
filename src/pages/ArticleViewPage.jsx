@@ -150,8 +150,8 @@ const ArticleViewPage = () => {
                 <img
                   src={
                     isLiked
-                      ? "img/icons/like-filled.png"
-                      : "img/icons/like-empty.png"
+                      ? "/nulp-s4-web-lab4/img/icons/like-filled.png"
+                      : "/nulp-s4-web-lab4/img/icons/like-empty.png"
                   }
                   className="article-like-img"
                   alt="Like"
