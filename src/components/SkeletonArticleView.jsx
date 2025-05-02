@@ -13,7 +13,7 @@ const SkeletonArticleView = () => {
             ))}
           </div>
         </div>
-        <div className="article-title skeleton"></div>
+        <div className="article-view-title skeleton"></div>
         <div className="article-text skeleton">
           {[...Array(5)].map((_, index) => (
             <div key={index} className="text-line skeleton"></div>

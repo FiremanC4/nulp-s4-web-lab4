@@ -138,7 +138,7 @@ const ArticleViewPage = () => {
               ))}
             </div>
           </div>
-          <h1 className="article-title">{article.title}</h1>
+          <h1 className="article-view-title">{article.title}</h1>
           <div className="article-text">{article.text}</div>
         </article>
 
