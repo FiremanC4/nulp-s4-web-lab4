@@ -26,7 +26,7 @@ function ArticleCard({ article, id, isProfile = false, onDelete }) {
 
   const handleLike = async () => {
     if (!auth.currentUser) {
-      return;
+      navigate("/login");
     }
 
     try {
